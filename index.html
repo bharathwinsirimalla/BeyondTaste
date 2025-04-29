@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Taste - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-orange-50">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-red-800 shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-2xl font-bold text-yellow-400">Beyond Taste</a>
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex space-x-6 desktop-menu">
+                        <a href="index.html" class="text-yellow-100 hover:text-yellow-400">Home</a>
+                        <a href="menu.html" class="text-yellow-100 hover:text-yellow-400">Menu</a>
+                        <a href="contact.html" class="text-yellow-400 font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Cart Icon (Left) -->
+                    <button type="button" id="cartIcon" class="p-2 hover:bg-red-700 rounded-full relative">
+                        <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-yellow-400 text-red-800 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">0</span>
+                    </button>
+                    <!-- Hamburger Menu Button (Right) with Dropdown -->
+                    <div class="relative">
+                        <button type="button" class="md:hidden hamburger-menu p-2 text-yellow-400 hover:bg-red-700 rounded-full">
+                            <div class="w-6 h-6 flex flex-col justify-center items-center space-y-1">
+                                <span class="block w-6 h-0.5 bg-yellow-400"></span>
+                                <span class="block w-6 h-0.5 bg-yellow-400"></span>
+                                <span class="block w-6 h-0.5 bg-yellow-400"></span>
+                            </div>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu absolute right-0 mt-2 w-48 bg-red-800 rounded-lg shadow-lg py-2 hidden">
+                            <a href="index.html" class="block px-4 py-2 text-yellow-100 hover:bg-red-700 hover:text-yellow-400">Home</a>
+                            <a href="menu.html" class="block px-4 py-2 text-yellow-100 hover:bg-red-700 hover:text-yellow-400">Menu</a>
+                            <a href="contact.html" class="block px-4 py-2 text-yellow-100 hover:bg-red-700 hover:text-yellow-400">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-red-800 mb-4">Welcome to Beyond Taste</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Experience the authentic flavors of Indian cuisine, where tradition meets innovation in every bite.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-red-800 text-4xl mb-4">🍽️</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Authentic Cuisine</h3>
+                <p class="text-gray-600">Discover traditional recipes passed down through generations, prepared with authentic ingredients.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-red-800 text-4xl mb-4">🌟</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Quality Assured</h3>
+                <p class="text-gray-600">Every dish is prepared with the finest ingredients, ensuring the highest quality and taste.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-red-800 text-4xl mb-4">🚀</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Delivery</h3>
+                <p class="text-gray-600">Enjoy your favorite dishes delivered fresh and hot, right to your doorstep.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="bg-white rounded-lg shadow-md p-8 mb-16">
+            <h2 class="text-3xl font-bold text-red-800 mb-6">Our Story</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-600 mb-4">
+                        Beyond Taste was founded with a simple mission: to bring authentic Indian flavors to food lovers everywhere. 
+                        Our journey began in a small kitchen and has grown into a beloved destination for those seeking genuine 
+                        Indian culinary experiences.
+                    </p>
+                    <p class="text-gray-600">
+                        We take pride in our traditional recipes, carefully selected ingredients, and the passion we put into 
+                        every dish we serve. Our chefs bring years of experience and creativity to create memorable dining 
+                        experiences for our customers.
+                    </p>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4">
+                    <h3 class="text-xl font-bold text-red-800 mb-4">Why Choose Us?</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>✓ Authentic recipes and ingredients</li>
+                        <li>✓ Experienced chefs</li>
+                        <li>✓ Quality assurance</li>
+                        <li>✓ Fast and reliable delivery</li>
+                        <li>✓ Excellent customer service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <h2 class="text-3xl font-bold text-red-800 mb-4">Ready to Experience?</h2>
+            <p class="text-gray-600 mb-6">Explore our menu and discover the perfect flavors for your taste buds.</p>
+            <a href="menu.html" class="inline-block bg-red-800 text-yellow-400 px-8 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                View Menu
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-yellow-400 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Beyond Taste</h3>
+                    <p class="text-yellow-100">Bringing authentic Indian flavors to your table.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                        <li><a href="orders.html" class="hover:text-yellow-300">Orders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-yellow-100">
+                        <li>📍 123 Food Street, Cuisine City</li>
+                        <li>📞 +91 123 456 7890</li>
+                        <li>✉️ info@beyondtaste.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-red-700">
+                <p>&copy; 2024 Beyond Taste. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

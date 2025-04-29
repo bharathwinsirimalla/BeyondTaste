@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Taste - Orders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-orange-50">
+    <!-- Header/Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-red-800 shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-2xl font-bold text-yellow-400">Beyond Taste</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-yellow-100 hover:text-yellow-400">Home</a>
+                        <a href="menu.html" class="text-yellow-100 hover:text-yellow-400">Menu</a>
+                        <a href="contact.html" class="text-yellow-100 hover:text-yellow-400">Contact</a>
+                        <a href="orders.html" class="text-yellow-400 font-medium">Orders</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="orders.html" class="p-2 hover:bg-red-700 rounded-full relative">
+                        <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-yellow-400 text-red-800 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <h1 class="text-4xl font-bold text-red-800 text-center mb-8">Your Orders</h1>
+
+        <!-- Order Tracking -->
+        <section class="mb-12">
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-red-800 mb-4">Track Order</h2>
+                <div class="flex gap-4">
+                    <input type="text" 
+                           placeholder="Enter Order ID" 
+                           class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <button class="bg-red-800 text-yellow-400 px-6 py-2 rounded-lg hover:bg-red-700 transition duration-300">
+                        Track
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order History -->
+        <section>
+            <h2 class="text-2xl font-bold text-red-800 mb-6">Order History</h2>
+            <div class="space-y-6">
+                <!-- Sample Order 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800">Order #12345</h3>
+                            <p class="text-gray-600">Placed on March 15, 2024</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Delivered</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Gulab Jamun (2)</span>
+                            <span class="font-medium">₹598</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Rasmalai (1)</span>
+                            <span class="font-medium">₹349</span>
+                        </div>
+                        <div class="border-t pt-2 mt-2">
+                            <div class="flex justify-between font-semibold">
+                                <span>Total</span>
+                                <span>₹947</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Order 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-800">Order #12344</h3>
+                            <p class="text-gray-600">Placed on March 10, 2024</p>
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Processing</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Samosa (4)</span>
+                            <span class="font-medium">₹596</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Kachori (2)</span>
+                            <span class="font-medium">₹338</span>
+                        </div>
+                        <div class="border-t pt-2 mt-2">
+                            <div class="flex justify-between font-semibold">
+                                <span>Total</span>
+                                <span>₹934</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-yellow-400 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Beyond Taste</h3>
+                    <p class="text-yellow-100">Bringing authentic Indian flavors to your table.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                        <li><a href="menu.html" class="hover:text-yellow-300">Menu</a></li>
+                        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+                        <li><a href="orders.html" class="hover:text-yellow-300">Orders</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-yellow-100">
+                        <li>📍 123 Food Street, Cuisine City</li>
+                        <li>📞 +91 123 456 7890</li>
+                        <li>✉️ info@beyondtaste.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-red-700">
+                <p>&copy; 2024 Beyond Taste. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
