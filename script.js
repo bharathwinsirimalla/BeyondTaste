@@ -176,6 +176,14 @@ const menuItems = [
         price: 199,
         image: "images/pakora.jpg",
         description: "Crispy vegetable fritters"
+    },
+    {
+        id: 11,
+        name: "Poori",
+        category: "Snacks",
+        price: 199,
+        image: "images/pakora.jpg",
+        description: "Crispy vegetable fritters"
     }
 ];
 
